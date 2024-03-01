@@ -7,6 +7,7 @@ const computerScoreDisplay = document.getElementById("computerScoreDisplay");
 let playerScore = 0;
 let computerScore = 0;
 
+// function for the game
 function playGame(playerChoice) {
   const computerChoice = choices[Math.floor(Math.random() * 3)];
   let result = "";
@@ -27,6 +28,7 @@ function playGame(playerChoice) {
     }
   }
 
+  // updating results
   playerDisplay.textContent = `Player: ${playerChoice}`;
   computerDisplay.textContent = `Computer: ${computerChoice}`;
   resultDisplay.textContent = result;
